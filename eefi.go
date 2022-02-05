@@ -1,4 +1,4 @@
-package dtos
+package leitor_edi_rede
 
 import (
 	"github.com/armando-couto/goutils"
