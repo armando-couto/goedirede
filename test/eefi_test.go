@@ -16,7 +16,7 @@ func TestEEFI(t *testing.T) {
 		t.Errorf("Erro no teste PopularRegistroTipo032CabecalhoMatriz(linha)")
 	}
 
-	linha = ""
+	linha = "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 	if retorno := leitor_edi_rede.PopularRegistroTipo034Creditos(linha, 0); retorno.TipoDeRegistro == 0 {
 		t.Errorf("Erro no teste PopularRegistroTipo034Creditos(linha)")
 	}
@@ -76,7 +76,7 @@ func TestEEFI(t *testing.T) {
 		t.Errorf("Erro no teste PopularRegistroTipo049DesagendamentosDeParcelas(linha)")
 	}
 
-	linha = ""
+	linha = "0500809569980000010000000000000000003810000001708672580000000000000000000000000000000000000000"
 	if retorno := leitor_edi_rede.PopularRegistroTipo050TotalizadorMatriz(linha); retorno.TipoDeRegistro == 0 {
 		t.Errorf("Erro no teste PopularRegistroTipo050TotalizadorMatriz(linha)")
 	}
@@ -87,7 +87,7 @@ func TestEEFI(t *testing.T) {
 	}
 
 	linha = "053606282XXXXXX11870202202209384944908463364600000000001459000037691617108503110032202020751132215QUTQ162W36RM                  "
-	if retorno := leitor_edi_rede.RegistroTipo053AjustesNetEDesagendamentosECommerce(linha); retorno.TipoDeRegistro == 0 {
+	if retorno := leitor_edi_rede.PopularRegistroTipo053AjustesNetEDesagendamentosECommerce(linha); retorno.TipoDeRegistro == 0 {
 		t.Errorf("Erro no teste RegistroTipo053AjustesNetEDesagendamentosECommerce(linha)")
 	}
 
