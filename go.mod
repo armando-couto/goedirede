@@ -1,4 +1,4 @@
-module github.com/armando-couto/leitoredirede
+module github.com/armando-couto/leitor_edi_rede
 
 go 1.15
 
