@@ -1,1 +1,1 @@
-package leitor_edi_rede
+package goleitoredirede

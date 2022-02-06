@@ -1,4 +1,4 @@
-package leitor_edi_rede
+package goleitoredirede
 
 import (
 	"github.com/armando-couto/goutils"
