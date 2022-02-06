@@ -1,4 +1,4 @@
-package goleitoredirede
+package goedirede
 
 import (
 	"github.com/armando-couto/goutils"

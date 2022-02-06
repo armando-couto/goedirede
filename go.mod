@@ -1,4 +1,4 @@
-module github.com/armando-couto/goleitoredirede
+module github.com/armando-couto/goedirede
 
 go 1.15
 
