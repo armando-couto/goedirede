@@ -23,7 +23,7 @@ type RegistroTipo002HeaderDoArquivo struct {
 
 func PopularRegistroTipo002HeaderDoArquivo(linha string) RegistroTipo002HeaderDoArquivo {
 	value := RegistroTipo002HeaderDoArquivo{}
-	if len(linha) < FALTA {
+	if len(linha) < 1024 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -52,7 +52,7 @@ type RegistroTipo004HeaderMatriz struct {
 
 func PopularRegistroTipo004HeaderMatriz(linha string) RegistroTipo004HeaderMatriz {
 	value := RegistroTipo004HeaderMatriz{}
-	if len(linha) < FALTA {
+	if len(linha) < 34 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -83,7 +83,7 @@ type RegistroTipo005Request struct {
 
 func PopularRegistroTipo005Request(linha string) RegistroTipo005Request {
 	value := RegistroTipo005Request{}
-	if len(linha) < FALTA {
+	if len(linha) < 1024 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -264,7 +264,7 @@ type RegistroTipo034CvNsuRotativoEcommerce struct {
 
 func PopularRegistroTipo034CvNsuRotativoEcommerce(linha string, index int) RegistroTipo034CvNsuRotativoEcommerce {
 	value := RegistroTipo034CvNsuRotativoEcommerce{}
-	if len(linha) < FALTA {
+	if len(linha) < 128 {
 		return value
 	}
 	value.Index = index
@@ -489,7 +489,7 @@ type RegistroTipo035CvNsuParceladoSemJurosEcommerce struct {
 
 func PopularRegistroTipo035CvNsuParceladoSemJurosEcommerce(linha string, index int) RegistroTipo035CvNsuParceladoSemJurosEcommerce {
 	value := RegistroTipo035CvNsuParceladoSemJurosEcommerce{}
-	if len(linha) < FALTA {
+	if len(linha) < 128 {
 		return value
 	}
 	value.Index = index
@@ -750,7 +750,7 @@ type RegistroTipo020ParcelasParcelandoIata struct {
 
 func PopularRegistroTipo020ParcelasParcelandoIata(linha string) RegistroTipo020ParcelasParcelandoIata {
 	value := RegistroTipo020ParcelasParcelandoIata{}
-	if len(linha) < FALTA {
+	if len(linha) < 1024 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -780,14 +780,14 @@ type RegistroTipo021SecureCode struct {
 
 func PopularRegistroTipo021SecureCode(linha string) RegistroTipo021SecureCode {
 	value := RegistroTipo021SecureCode{}
-	if len(linha) < FALTA {
+	if len(linha) < 26 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
 	value.NumeroDoPv = goutils.ConvertStringToInt(linha[3:12])
 	value.QuantidadeDeConsultasRealizadas = goutils.ConvertStringToInt(linha[12:17])
 	value.DataDaConsulta = goutils.ConvertStringToTimeLayoutDDMMYYYY(linha[17:25])
-	value.Bandeira = linha[25:]
+	value.Bandeira = linha[25:26]
 	return value
 }
 
@@ -863,7 +863,7 @@ type RegistroTipo024DvNsuDolar struct {
 
 func PopularRegistroTipo024DvNsuDolar(linha string) RegistroTipo024DvNsuDolar {
 	value := RegistroTipo024DvNsuDolar{}
-	if len(linha) < FALTA {
+	if len(linha) < 169 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -884,8 +884,8 @@ func PopularRegistroTipo024DvNsuDolar(linha string) RegistroTipo024DvNsuDolar {
 	value.HoraDaTransacao = goutils.ConvertStringToTimeLayoutHHMMSS(linha[149:155])
 	value.NumeroDoTerminal = linha[155:163]
 	value.TipoDeCaptura = goutils.ConvertStringToInt(linha[163:165])
-	value.SiglaDoPais = linha[165:167]
-	value.Bandeira = linha[0:3]
+	value.SiglaDoPais = linha[165:168]
+	value.Bandeira = linha[168:169]
 	return value
 }
 
