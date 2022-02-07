@@ -23,6 +23,9 @@ type RegistroTipo00CabecalhoDoArquivo struct {
 
 func PopularRegistroTipo00CabecalhoDoArquivo(coluna []string) RegistroTipo00CabecalhoDoArquivo {
 	value := RegistroTipo00CabecalhoDoArquivo{}
+	if len(coluna) < 10 {
+		return value
+	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDaMatrizOuGrupoComercial = goutils.ConvertStringToInt(coluna[1])
 	value.DataDeEmissao = goutils.ConvertStringToTimeLayoutDDMMYYYY(coluna[2])
@@ -59,6 +62,9 @@ type RegistroTipo01ResumoDeVendas struct {
 
 func PopularRegistroTipo01ResumoDeVendas(coluna []string, index int) RegistroTipo01ResumoDeVendas {
 	value := RegistroTipo01ResumoDeVendas{}
+	if len(coluna) < 14 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDaMatrizOuGrupoComercial = goutils.ConvertStringToInt(coluna[1])
@@ -95,6 +101,9 @@ type RegistroTipo02TotalDoPontoDeVenda struct {
 
 func PopularRegistroTipo02TotalDoPontoDeVenda(coluna []string) RegistroTipo02TotalDoPontoDeVenda {
 	value := RegistroTipo02TotalDoPontoDeVenda{}
+	if len(coluna) < 10 {
+		return value
+	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDaMatriz = goutils.ConvertStringToInt(coluna[1])
 	value.QuantidadeDereResumosDeVendasAtacados = goutils.ConvertStringToInt(coluna[2])
@@ -126,6 +135,9 @@ type RegistroTipo03TotalDaMatriz struct {
 
 func PopularRegistroTipo03TotalDaMatriz(coluna []string) RegistroTipo03TotalDaMatriz {
 	value := RegistroTipo03TotalDaMatriz{}
+	if len(coluna) < 10 {
+		return value
+	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDaMatriz = goutils.ConvertStringToInt(coluna[1])
 	value.QuantidadeDereResumosDeVendasAtacados = goutils.ConvertStringToInt(coluna[2])
@@ -158,6 +170,9 @@ type RegistroTipo04TotalDoArquivo struct {
 
 func PopularRegistroTipo04TotalDoArquivo(coluna []string) RegistroTipo04TotalDoArquivo {
 	value := RegistroTipo04TotalDoArquivo{}
+	if len(coluna) < 11 {
+		return value
+	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDaMatrizOuGrupoComercial = goutils.ConvertStringToInt(coluna[1])
 	value.QuantidadeDereResumosDeVendasAtacados = goutils.ConvertStringToInt(coluna[2])
@@ -200,6 +215,9 @@ type RegistroTipo05DetalhamentoDosComprovantesDeVendas struct {
 
 func PopularRegistroTipo05DetalhamentoDosComprovantesDeVendas(coluna []string, index int) RegistroTipo05DetalhamentoDosComprovantesDeVendas {
 	value := RegistroTipo05DetalhamentoDosComprovantesDeVendas{}
+	if len(coluna) < 19 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDoPontoDeVendas = goutils.ConvertStringToInt(coluna[1])
@@ -243,6 +261,9 @@ type RegistroTipo08DesagendamentoDeVendasPreDatadas struct {
 
 func PopularRegistroTipo08DesagendamentoDeVendasPreDatadas(coluna []string, index int) RegistroTipo08DesagendamentoDeVendasPreDatadas {
 	value := RegistroTipo08DesagendamentoDeVendasPreDatadas{}
+	if len(coluna) < 11 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDoPontoDeVenda = goutils.ConvertStringToInt(coluna[1])
@@ -277,6 +298,9 @@ type RegistroTipo09TransacoesPreDatadasLiquidadas struct {
 
 func PopularRegistroTipo09TransacoesPreDatadasLiquidadas(coluna []string, index int) RegistroTipo09TransacoesPreDatadasLiquidadas {
 	value := RegistroTipo09TransacoesPreDatadasLiquidadas{}
+	if len(coluna) < 10 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDoPontoDeVenda = goutils.ConvertStringToInt(coluna[1])
@@ -329,6 +353,9 @@ type RegistroTipo11AjustesNet struct {
 
 func PopularRegistroTipo11AjustesNet(coluna []string, index int) RegistroTipo11AjustesNet {
 	value := RegistroTipo11AjustesNet{}
+	if len(coluna) < 29 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDoPvAjustado = goutils.ConvertStringToInt(coluna[1])
@@ -380,6 +407,9 @@ type RegistroTipo13DetalhamentoDosComprovantesDeVendasEcommerce struct {
 
 func PopularRegistroTipo13DetalhamentoDosComprovantesDeVendasEcommerce(coluna []string, index int) RegistroTipo13DetalhamentoDosComprovantesDeVendasEcommerce {
 	value := RegistroTipo13DetalhamentoDosComprovantesDeVendasEcommerce{}
+	if len(coluna) < 9 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDoPontoDeVendas = goutils.ConvertStringToInt(coluna[1])
@@ -413,6 +443,9 @@ type RegistroTipo17AjustesNetEcommerce struct {
 
 func PopularRegistroTipo17AjustesNetEcommerce(coluna []string, index int) RegistroTipo17AjustesNetEcommerce {
 	value := RegistroTipo17AjustesNetEcommerce{}
+	if len(coluna) < 11 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDoCartao = goutils.ConvertStringToInt(coluna[1])
@@ -446,6 +479,9 @@ type RegistroTipo20DetalhamentoDosComprovantesDeVendasOperadorasDeCelular struct
 
 func PopularRegistroTipo20DetalhamentoDosComprovantesDeVendasOperadorasDeCelular(coluna []string, index int) RegistroTipo20DetalhamentoDosComprovantesDeVendasOperadorasDeCelular {
 	value := RegistroTipo20DetalhamentoDosComprovantesDeVendasOperadorasDeCelular{}
+	if len(coluna) < 9 {
+		return value
+	}
 	value.Index = index
 	value.TipoDeRegistro = goutils.ConvertStringToInt(coluna[0])
 	value.NumeroDaFiliacaoDaMatrizOuGrupoComercial = goutils.ConvertStringToInt(coluna[1])
