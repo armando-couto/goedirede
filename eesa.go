@@ -32,6 +32,7 @@ func PopularRegistroTipo060CabecalhoDoArquivo(linha string) RegistroTipo060Cabec
 	value.NomeComercial = linha[59:81]
 	value.SequenciaDoMovimento = goutils.ConvertStringToInt(linha[81:87])
 	value.NumeroPvGrupoOuMatriz = goutils.ConvertStringToInt(linha[87:96])
+	value.DiarioOuReprocessamento = linha[96:111]
 	value.VersaoDoArquivo = linha[111:119]
 	return value
 }
