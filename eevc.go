@@ -23,7 +23,7 @@ type RegistroTipo002HeaderDoArquivo struct {
 
 func PopularRegistroTipo002HeaderDoArquivo(linha string) RegistroTipo002HeaderDoArquivo {
 	value := RegistroTipo002HeaderDoArquivo{}
-	if len(linha) < 1024 {
+	if len(linha) < 121 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -52,7 +52,7 @@ type RegistroTipo004HeaderMatriz struct {
 
 func PopularRegistroTipo004HeaderMatriz(linha string) RegistroTipo004HeaderMatriz {
 	value := RegistroTipo004HeaderMatriz{}
-	if len(linha) < 34 {
+	if len(linha) < 12 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -83,7 +83,7 @@ type RegistroTipo005Request struct {
 
 func PopularRegistroTipo005Request(linha string) RegistroTipo005Request {
 	value := RegistroTipo005Request{}
-	if len(linha) < 1024 {
+	if len(linha) < 121 {
 		return value
 	}
 	value.TipoDeRegistro = goutils.ConvertStringToInt(linha[0:3])
@@ -264,7 +264,7 @@ type RegistroTipo034CvNsuRotativoEcommerce struct {
 
 func PopularRegistroTipo034CvNsuRotativoEcommerce(linha string, index int) RegistroTipo034CvNsuRotativoEcommerce {
 	value := RegistroTipo034CvNsuRotativoEcommerce{}
-	if len(linha) < 128 {
+	if len(linha) < 98 {
 		return value
 	}
 	value.Index = index
@@ -489,7 +489,7 @@ type RegistroTipo035CvNsuParceladoSemJurosEcommerce struct {
 
 func PopularRegistroTipo035CvNsuParceladoSemJurosEcommerce(linha string, index int) RegistroTipo035CvNsuParceladoSemJurosEcommerce {
 	value := RegistroTipo035CvNsuParceladoSemJurosEcommerce{}
-	if len(linha) < 128 {
+	if len(linha) < 98 {
 		return value
 	}
 	value.Index = index
