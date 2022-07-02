@@ -1,6 +1,8 @@
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/armando-couto/goutils v1.17.0 h1:8xP6LTlMgmSjlL6z3dfcAdjOj2cRLUEdElx5mzUsJl4=
 github.com/armando-couto/goutils v1.17.0/go.mod h1:MggUR5dyJOr0brRgi5FQuRcMPdNi0pJ4LqIFCrAzjG0=
+github.com/armando-couto/goutils v1.20.4 h1:WYXZXNX3TWg/rrXsb5RukwXbNnJW1pATHukrx+ef0Dc=
+github.com/armando-couto/goutils v1.20.4/go.mod h1:rXw4L2VOH3zs4lOIb2Ptg7WprMcbnoVzCX9bhmhLJG8=
 github.com/aws/aws-sdk-go v1.38.2 h1:qUXZReQck3SdPwMN3HnNk1Mgq2jJJ2T7V+790HthW4g=
 github.com/aws/aws-sdk-go v1.38.2/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/cockroachdb/apd v1.1.0/go.mod h1:8Sl8LxpKi29FqWXR16WEFZRNSz3SoPzUzeMeY4+DwBQ=
