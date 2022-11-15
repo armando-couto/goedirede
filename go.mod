@@ -2,10 +2,10 @@ module github.com/armando-couto/goedirede
 
 go 1.19
 
-require github.com/armando-couto/goutils v1.21.1
+require github.com/armando-couto/goutils v1.21.2
 
 require (
-	github.com/aws/aws-sdk-go v1.44.102 // indirect
+	github.com/aws/aws-sdk-go v1.44.136 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
@@ -34,11 +34,11 @@ require (
 	github.com/xdg/scram v1.0.5 // indirect
 	github.com/xdg/stringprep v1.0.3 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
-	go.mongodb.org/mongo-driver v1.10.2 // indirect
-	golang.org/x/crypto v0.0.0-20220919173607-35f4265a4bc0 // indirect
-	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e // indirect
-	golang.org/x/text v0.3.7 // indirect
-	gorm.io/driver/postgres v1.3.10 // indirect
-	gorm.io/gorm v1.23.10 // indirect
+	go.mongodb.org/mongo-driver v1.11.0 // indirect
+	golang.org/x/crypto v0.2.0 // indirect
+	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
+	golang.org/x/sys v0.2.0 // indirect
+	golang.org/x/text v0.4.0 // indirect
+	gorm.io/driver/postgres v1.4.5 // indirect
+	gorm.io/gorm v1.24.1 // indirect
 )
