@@ -20,6 +20,8 @@ github.com/armando-couto/goutils v1.23.3 h1:+mjx0WsOEBqCSKGAWXpysAeX/m+dKWbQmSHr
 github.com/armando-couto/goutils v1.23.3/go.mod h1:j+1dt0/3wh1ddZywl1F76M/dFr5/sOO18LimgAW4dk8=
 github.com/armando-couto/goutils v1.24.1 h1:VxKP/benpdJ97z51JZVlDgYZ8vB+TQMwIWHbz+Ub7CY=
 github.com/armando-couto/goutils v1.24.1/go.mod h1:XNkukV1iSYKdZ6rzxcW/t7kKVwBecNoxfYeHmWTw7qA=
+github.com/armando-couto/goutils v1.24.4 h1:uJVW/N539IxhLgD+uYKdu6lA057Ubb1INTcmF43QDqk=
+github.com/armando-couto/goutils v1.24.4/go.mod h1:IX7DFAXQKLFWtvPC/JauTT2IEmjezAMes3OZ3UzGPAI=
 github.com/aws/aws-sdk-go v1.38.2 h1:qUXZReQck3SdPwMN3HnNk1Mgq2jJJ2T7V+790HthW4g=
 github.com/aws/aws-sdk-go v1.38.2/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/aws/aws-sdk-go v1.44.77 h1:m5rTfdv04/swD+vTuS2zn4NEwKX3yEJPMhiVCFDL/mU=
@@ -38,6 +40,8 @@ github.com/aws/aws-sdk-go v1.44.237 h1:gsmVP8eTB6id4tmEsBPcjLlYi1sXtKA047bSn7kJZ
 github.com/aws/aws-sdk-go v1.44.237/go.mod h1:aVsgQcEevwlmQ7qHE9I3h+dtQgpqhFB+i8Phjh7fkwI=
 github.com/aws/aws-sdk-go v1.44.241 h1:D3KycZq3HjhmjYGzvTcmX/Ztf/KNmsfTmdDuKdnzZKo=
 github.com/aws/aws-sdk-go v1.44.241/go.mod h1:aVsgQcEevwlmQ7qHE9I3h+dtQgpqhFB+i8Phjh7fkwI=
+github.com/aws/aws-sdk-go v1.44.246 h1:iLxPX6JU0bxAci9R6/bp8rX0kL871ByCTx0MZlQWv1U=
+github.com/aws/aws-sdk-go v1.44.246/go.mod h1:aVsgQcEevwlmQ7qHE9I3h+dtQgpqhFB+i8Phjh7fkwI=
 github.com/cockroachdb/apd v1.1.0/go.mod h1:8Sl8LxpKi29FqWXR16WEFZRNSz3SoPzUzeMeY4+DwBQ=
 github.com/coreos/go-systemd v0.0.0-20190321100706-95778dfbb74e/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
 github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
@@ -201,6 +205,8 @@ github.com/lib/pq v1.10.6 h1:jbk+ZieJ0D7EVGJYpL9QTz7/YW6UHbmdnZWYyK5cdBs=
 github.com/lib/pq v1.10.6/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
 github.com/lib/pq v1.10.7 h1:p7ZhMD+KsSRozJr34udlUrhboJwWAgCg34+/ZZNvZZw=
 github.com/lib/pq v1.10.7/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
+github.com/lib/pq v1.10.8 h1:3fdt97i/cwSU83+E0hZTC/Xpc9mTZxc6UWSCRcSbxiE=
+github.com/lib/pq v1.10.8/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
 github.com/mattn/go-colorable v0.1.1/go.mod h1:FuOcm+DKB9mbwrcAfNl7/TZVBZ6rcnceauSikq3lYCQ=
 github.com/mattn/go-colorable v0.1.2/go.mod h1:U0ppj6V5qS13XJ6of8GYAs25YV2eR4EVcfRqFIhoBtE=
 github.com/mattn/go-colorable v0.1.6/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
