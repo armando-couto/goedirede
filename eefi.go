@@ -161,7 +161,7 @@ func PopularRegistroTipo035AjustesNetEDesagendados(linha string, index int) Regi
 	value.DataDoAjuste = goutils.ConvertStringToTimeLayoutDDMMYYYY(linha[21:29])
 	value.ValorDoAjuste = goutils.KeepZero(goutils.ConvertStringToFloatScale2FormatNumber(linha[29:44]))
 	value.Debito = linha[44:45]
-	value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[45:47])
+
 	value.MotivoDoAjuste = linha[47:75]
 	value.NumeroDoCartao = linha[75:91]
 	value.DataDaTransacaoCv = goutils.ConvertStringToTimeLayoutDDMMYYYY(linha[91:99])
@@ -186,6 +186,13 @@ func PopularRegistroTipo035AjustesNetEDesagendados(linha string, index int) Regi
 	value.ValorPendente = goutils.ConvertStringToFloatScale2FormatNumber(linha[283:298])
 	value.BandeiraDoRvDeOrigem = linha[298:299]
 	value.BandeiraDoRvAjustado = linha[299:300]
+
+	if len(linha) > 313 { // Esse é o novo campo
+		value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[312:316])
+	} else { // campo Antigo
+		value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[45:47])
+	}
+
 	return value
 }
 
@@ -334,7 +341,7 @@ func PopularRegistroTipo038AjustesADebitoViaBanco(linha string) RegistroTipo038A
 	value.DataRvOriginal = goutils.ConvertStringToTimeLayoutDDMMYYYY(linha[76:84])
 	value.ValorDoCreditoOriginal = goutils.ConvertStringToFloatScale2FormatNumber(linha[84:99])
 	value.MotivoDoDebitoCodigo = goutils.ConvertStringToInt(linha[99:101])
-	value.MotivoDoDebito = linha[101:129]
+
 	value.NumeroDoCartao = linha[129:145]
 	value.NumeroDeReferenciaDaCartaFax = linha[145:160]
 	value.MesReferencia = goutils.ConvertStringToInt(linha[160:166])
@@ -352,6 +359,13 @@ func PopularRegistroTipo038AjustesADebitoViaBanco(linha string) RegistroTipo038A
 	value.ValorDoDebitoTotal = goutils.ConvertStringToFloatScale2FormatNumber(linha[272:287])
 	value.ValorPendente = goutils.ConvertStringToFloatScale2FormatNumber(linha[287:302])
 	value.BandeiraDoRvDeOrigem = linha[302:303]
+
+	if len(linha) > 303 { // Esse é o novo campo
+		value.MotivoDoDebito = linha[303:307]
+	} else { // campo Antigo
+		value.MotivoDoDebito = linha[101:129]
+	}
+
 	return value
 }
 
@@ -479,9 +493,16 @@ func PopularRegistroTipo043AjustesACreditoExtratoEletronicoFinanceiro(linha stri
 	value.Banco = goutils.ConvertStringToInt(linha[64:67])
 	value.Agencia = goutils.ConvertStringToInt(linha[67:73])
 	value.ContaCorrente = linha[73:84]
-	value.MotivoDoCreditoCodigo = goutils.ConvertStringToInt(linha[84:86])
+
 	value.MotivoDoCredito = linha[86:114]
 	value.Bandeira = linha[114:115]
+
+	if len(linha) > 116 { // Esse é o novo campo
+		value.MotivoDoCreditoCodigo = goutils.ConvertStringToInt(linha[115:119])
+	} else { // campo Antigo
+		value.MotivoDoCreditoCodigo = goutils.ConvertStringToInt(linha[84:86])
+	}
+
 	return value
 }
 
@@ -527,7 +548,7 @@ func PopularRegistroTipo044DebitosPendentes(linha string) RegistroTipo044Debitos
 	value.NumeroDaOrdemDeDebito = goutils.ConvertStringToInt(linha[12:23])
 	value.DataDaOD = goutils.ConvertStringToTimeLayoutDDMMYYYY(linha[23:31])
 	value.ValorDaOD = goutils.ConvertStringToFloatScale2FormatNumber(linha[31:46])
-	value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[46:48])
+
 	value.MotivoDoAjuste = linha[48:76]
 	value.NumeroDoCartao = linha[76:92]
 	value.NumeroDoNsu = goutils.ConvertStringToInt(linha[92:104])
@@ -548,6 +569,13 @@ func PopularRegistroTipo044DebitosPendentes(linha string) RegistroTipo044Debitos
 	value.MeioDeCompensacaoCodigo = goutils.ConvertStringToInt(linha[256:258])
 	value.MeioDeCompensacao = linha[258:286]
 	value.Bandeira = linha[286:287]
+
+	if len(linha) > 287 { // Esse é o novo campo
+		value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[287:291])
+	} else { // campo Antigo
+		value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[46:48])
+	}
+
 	return value
 }
 
@@ -592,7 +620,7 @@ func PopularRegistroTipo045DebitosLiquidados(linha string) RegistroTipo045Debito
 	value.NumeroDaOrdemDeDebito = goutils.ConvertStringToInt(linha[12:23])
 	value.DataDaOD = goutils.ConvertStringToTimeLayoutDDMMYYYY(linha[23:31])
 	value.ValorDaOD = goutils.ConvertStringToFloatScale2FormatNumber(linha[31:46])
-	value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[46:48])
+
 	value.MotivoDoAjuste = linha[48:76]
 	value.NumeroDoCartao = linha[76:92]
 	value.NumeroDoNsu = goutils.ConvertStringToInt(linha[92:104])
@@ -612,6 +640,13 @@ func PopularRegistroTipo045DebitosLiquidados(linha string) RegistroTipo045Debito
 	value.MeioDeCompensacaoCodigo = goutils.ConvertStringToInt(linha[241:243])
 	value.MeioDeCompensacao = linha[243:271]
 	value.Bandeira = linha[271:272]
+
+	if len(linha) > 272 { // Esse é o novo campo
+		value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[272:276])
+	} else { // campo Antigo
+		value.MotivoDoAjusteCodigo = goutils.ConvertStringToInt(linha[46:48])
+	}
+
 	return value
 }
 
