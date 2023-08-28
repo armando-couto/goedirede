@@ -3,7 +3,7 @@ module github.com/armando-couto/goedirede
 go 1.19
 
 require (
-	github.com/armando-couto/goutils v1.26.3
+	github.com/armando-couto/goutils/v2 v2.0.5
 	github.com/armando-couto/goutils/v2 v2.0.5
 )
 
