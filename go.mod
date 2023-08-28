@@ -2,10 +2,13 @@ module github.com/armando-couto/goedirede
 
 go 1.19
 
-require github.com/armando-couto/goutils v1.26.1
+require (
+	github.com/armando-couto/goutils v1.26.3
+	github.com/armando-couto/goutils/v2 v2.0.5
+)
 
 require (
-	github.com/aws/aws-sdk-go v1.44.322 // indirect
+	github.com/aws/aws-sdk-go v1.44.332 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-sql-driver/mysql v1.7.1 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
@@ -42,5 +45,5 @@ require (
 	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.12.0 // indirect
 	gorm.io/driver/postgres v1.5.2 // indirect
-	gorm.io/gorm v1.25.3 // indirect
+	gorm.io/gorm v1.25.4 // indirect
 )
